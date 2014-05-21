@@ -1,0 +1,6 @@
+PATH=/bin:/usr/local/bin
+
+# Put this in your crontab file to run the script every day at 01:30 (1:30am). Note the PATH variable above; required for this script.
+
+# m h  dom mon dow   command
+30 01 * * * /bin/bash /home/ubuntu/scripts/ec2-create-image.sh i-8a915682 >> /home/ubuntu/logs/crontab.log 2>&1
